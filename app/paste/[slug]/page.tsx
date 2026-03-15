@@ -11,16 +11,20 @@ interface PageProps {
 
 async function getPaste(slug: string): Promise<Paste | null> {
   try {
+    console.log('Fetching paste with slug:', slug)
+    
     const { data, error } = await supabase
       .from('pastes')
       .select('*')
       .eq('slug', slug)
-      .maybeSingle()
+      .single()
 
-    if (error || !data) {
+    if (error) {
+      console.error('Supabase error:', error)
       return null
     }
 
+    console.log('Found paste:', data)
     return data
   } catch (error) {
     console.error('Error fetching paste:', error)
