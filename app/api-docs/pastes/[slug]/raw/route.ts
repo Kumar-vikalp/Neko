@@ -4,13 +4,16 @@ import { supabase } from '@/lib/supabase'
 // GET /api/pastes/[slug]/raw - Get raw paste content
 export async function GET(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  context: { params: Promise<{ slug: string; }> }
 ) {
   try {
+    const resolvedParams = await context.params;
+    const slug = resolvedParams.slug;
+
     const { data, error } = await supabase
       .from('pastes')
       .select('content')
-      .eq('slug', params.slug)
+      .eq('slug', slug)
       .maybeSingle()
 
     if (error) {
