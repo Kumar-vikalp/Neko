@@ -66,10 +66,10 @@ export default function DocsPage() {
               <h2 className="text-2xl font-semibold mb-4">URL Structure</h2>
               <div className="space-y-2">
                 <p><strong>Paste URLs:</strong></p>
-                <code className="block bg-gray-800 p-2 rounded">https://binuniverse.com/[paste-id]</code>
+                <code className="block bg-gray-800 p-2 rounded">https://binuniverse.hornymama.workers.dev/[paste-id]</code>
                 
                 <p className="mt-4"><strong>Raw Content:</strong></p>
-                <code className="block bg-gray-800 p-2 rounded">https://binuniverse.com/api/pastes/[paste-id]/raw</code>
+                <code className="block bg-gray-800 p-2 rounded">https://binuniverse.hornymama.workers.dev/api/pastes/[paste-id]/raw</code>
               </div>
             </section>
 
