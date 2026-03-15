@@ -124,7 +124,7 @@ export default function Header({ pasteSlug, onSave, onNew }: HeaderProps) {
           onClick={handleNew}
           title="New paste (Ctrl+N)"
         >
-          <i className="faPlus"></i>
+          <i className="fas fa-plus"></i>
         </button>
       </div>
     </header>
