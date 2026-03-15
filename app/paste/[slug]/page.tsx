@@ -1,7 +1,6 @@
 import React from 'react'
 import { notFound } from 'next/navigation'
 import { supabase, type Paste } from '@/lib/supabase'
-import { codeToHtml } from 'shiki'
 import PasteViewer from '@/components/PasteViewer'
 
 interface PageProps {
@@ -36,10 +35,8 @@ export default async function PastePage({ params }: PageProps) {
     notFound()
   }
 
-  const highlightedCode = await codeToHtml(paste.content, {
-    lang: paste.language === 'text' ? 'txt' : paste.language,
-    theme: 'github-dark',
-  })
+  // Temporarily bypass Shiki for debugging
+  const highlightedCode = paste.content
 
   return <PasteViewer slug={params.slug} highlightedCode={highlightedCode} />
 }
