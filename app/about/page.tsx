@@ -54,12 +54,12 @@ export default function AboutPage() {
             </p>
             <p className="mt-2">
               <a 
-                href="https://github.com/m0ansterr/Neko" 
+                href="https://github.com/kumar-vikalp/Neko" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                https://github.com/m0ansterr/Neko
+                https://github.com/kumar-vikalp/Neko
               </a>
             </p>
           </div>
