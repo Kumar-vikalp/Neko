@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import styles from './Footer.module.css' // Import the styles
+import Link from 'next/link'
 
 interface HeaderProps {
   pasteSlug?: string
@@ -84,8 +86,11 @@ export default function Header({ pasteSlug, onSave, onNew }: HeaderProps) {
   return (
     <header>
       <div className="flex items-center">
-        <span className="text-2xl Neko-logo">bin...</span>
         <div className="divider ml-4"></div>
+        <Link href="/" className="flex items-center">
+          <span className={`${styles.bat} ml-1 mr-1`}></span>
+        </Link>
+        
       </div>
 
       {pasteSlug && (

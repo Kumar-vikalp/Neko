@@ -359,3 +359,19 @@ footer .links {
 		opacity: 1;
 	}
 }
+
+.bat {
+  width: 1px;
+  height: 1px;
+  transform: scale(4);
+  position: relative;
+  left: -128px;
+  top: -128px;
+  animation: 0.4s bat steps(1) infinite;
+}
+
+@keyframes bat {
+  /* You'll need the keyframe steps here for the animation to actually move! */
+  from { background-position: 0 0; }
+  to { background-position: -100% 0; }
+}

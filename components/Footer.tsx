@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import styles from './Footer.module.css' // Import the styles
 
 export default function Footer() {
   return (
@@ -22,9 +23,8 @@ export default function Footer() {
       
       <div id="copyright" className="ml-auto text-sm opacity-75">
         Copyright <i className="far fa-copyright"></i> 2026 -
-        <i className="fas fa-cat ml-1 mr-1"></i>
-        <a href="https://github.com/m0ansterr" rel="noopener" target="_blank" className="hover:opacity-100 transition-opacity">
-          Moanster
+        <a href="https://github.com/kumar-vikalp" rel="noopener" target="_blank" className="hover:opacity-100 transition-opacity">
+          kumar-vikalp
         </a>
       </div>
     </footer>
