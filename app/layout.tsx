@@ -4,11 +4,11 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'binuniverse',
-  description: 'Share code snippets and text easily with binuniverse',
+  title: 'Neko',
+  description: 'Share code snippets and text easily with Neko',
   openGraph: {
-    title: 'binuniverse',
-    description: 'Share code snippets and text easily with binuniverse',
+    title: 'Neko',
+    description: 'Share code snippets and text easily with Neko',
     images: [
       {
         url: 'https://images.postersuniverse.workers.dev/?file=OEZEOZBQIZMDOUJTMF5EUOLRIJK4J7Y&mode=inline',
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'binuniverse',
-    description: 'Share code snippets and text easily with binuniverse',
+    title: 'Neko',
+    description: 'Share code snippets and text easily with Neko',
     images: [
       {
         url: 'https://images.postersuniverse.workers.dev/?file=OEZEOZBQIZMDOUJTMF5EUOLRIJK4J7Y&mode=inline',
@@ -49,7 +49,7 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="binuniverse-layout">
+      <body className="Neko-layout">
         <Header />
         {children}
         <Footer />

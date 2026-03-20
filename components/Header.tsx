@@ -84,7 +84,7 @@ export default function Header({ pasteSlug, onSave, onNew }: HeaderProps) {
   return (
     <header>
       <div className="flex items-center">
-        <span className="text-2xl binuniverse-logo">bin...</span>
+        <span className="text-2xl Neko-logo">bin...</span>
         <div className="divider ml-4"></div>
       </div>
 

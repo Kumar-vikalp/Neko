@@ -23,10 +23,10 @@ export default function PasteViewer({ slug, highlightedCode }: PasteViewerProps)
   }, [])
 
   return (
-    <div className="binuniverse-layout">
+    <div className="Neko-layout">
       <Header pasteSlug={slug} />
 
-      <div id="content" className="binuniverse-editor readonly">
+      <div id="content" className="Neko-editor readonly">
         <div className="h-full overflow-auto p-4">
           <pre className="whitespace-pre-wrap font-mono text-sm leading-relaxed">
             {highlightedCode}

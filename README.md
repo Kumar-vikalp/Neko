@@ -1,10 +1,10 @@
-# 🌌 binuniverse
+# 🌌 Neko
 
-![binuniverse](https://images.postersuniverse.workers.dev/?file=OEZEOZBQIZMDOUJTMF5EUOLRIJK4J7Y&mode=inline)
+![Neko](https://images.postersuniverse.workers.dev/?file=OEZEOZBQIZMDOUJTMF5EUOLRIJK4J7Y&mode=inline)
 
 A modern, fast, and elegant pastebin service built with Next.js and Supabase. Share code snippets, text, and collaborate with others seamlessly.
 
-🌐 **Live Demo:** [https://binuniverse.hornymama.workers.dev](https://binuniverse.hornymama.workers.dev)
+🌐 **Live Demo:** [https://Neko.hornymama.workers.dev](https://Neko.hornymama.workers.dev)
 
 ## ✨ Features
 
@@ -31,8 +31,8 @@ A modern, fast, and elegant pastebin service built with Next.js and Supabase. Sh
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/m0ansterr/binUniverse.git
-   cd binUniverse
+   git clone https://github.com/m0ansterr/Neko.git
+   cd Neko
    ```
 
 2. **Install dependencies**
@@ -65,7 +65,7 @@ A modern, fast, and elegant pastebin service built with Next.js and Supabase. Sh
 3. Click "New Project"
 4. Choose your organization
 5. Fill in project details:
-   - **Name**: `binuniverse` (or your preferred name)
+   - **Name**: `Neko` (or your preferred name)
    - **Database Password**: Generate a strong password
    - **Region**: Choose closest to your users
 6. Click "Create new project"
@@ -104,7 +104,7 @@ The database schema will be automatically created when you first run the applica
 ### Web Interface
 
 1. **Create a Paste**
-   - Visit [https://binuniverse.hornymama.workers.dev](https://binuniverse.hornymama.workers.dev)
+   - Visit [https://Neko.hornymama.workers.dev](https://Neko.hornymama.workers.dev)
    - Paste your content in the text area
    - Press `Ctrl+S` to save
    - Share the generated URL
@@ -119,14 +119,14 @@ The database schema will be automatically created when you first run the applica
 
 ### API Usage
 
-The binuniverse API provides full CRUD operations for pastes.
+The Neko API provides full CRUD operations for pastes.
 
-**Base URL:** `https://binuniverse.hornymama.workers.dev/api`
+**Base URL:** `https://Neko.hornymama.workers.dev/api`
 
 #### Create a Paste
 
 ```bash
-curl -X POST https://binuniverse.hornymama.workers.dev/api/pastes \
+curl -X POST https://Neko.hornymama.workers.dev/api/pastes \
   -H "Content-Type: application/json" \
   -d '{
     "content": "console.log(\"Hello, World!\");",
@@ -150,19 +150,19 @@ curl -X POST https://binuniverse.hornymama.workers.dev/api/pastes \
 #### Get a Paste
 
 ```bash
-curl https://binuniverse.hornymama.workers.dev/api/pastes/abc12345
+curl https://Neko.hornymama.workers.dev/api/pastes/abc12345
 ```
 
 #### Get Raw Content
 
 ```bash
-curl https://binuniverse.hornymama.workers.dev/api/pastes/abc12345/raw
+curl https://Neko.hornymama.workers.dev/api/pastes/abc12345/raw
 ```
 
 #### Update a Paste
 
 ```bash
-curl -X PUT https://binuniverse.hornymama.workers.dev/api/pastes/abc12345 \
+curl -X PUT https://Neko.hornymama.workers.dev/api/pastes/abc12345 \
   -H "Content-Type: application/json" \
   -d '{
     "content": "Updated content here",
@@ -174,7 +174,7 @@ curl -X PUT https://binuniverse.hornymama.workers.dev/api/pastes/abc12345 \
 #### Delete a Paste
 
 ```bash
-curl -X DELETE https://binuniverse.hornymama.workers.dev/api/pastes/abc12345
+curl -X DELETE https://Neko.hornymama.workers.dev/api/pastes/abc12345
 ```
 
 ### JavaScript/Node.js Example
@@ -182,7 +182,7 @@ curl -X DELETE https://binuniverse.hornymama.workers.dev/api/pastes/abc12345
 ```javascript
 // Create a new paste
 const createPaste = async () => {
-  const response = await fetch('https://binuniverse.hornymama.workers.dev/api/pastes', {
+  const response = await fetch('https://Neko.hornymama.workers.dev/api/pastes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -201,7 +201,7 @@ const createPaste = async () => {
 
 // Get a paste
 const getPaste = async (slug) => {
-  const response = await fetch(`https://binuniverse.hornymama.workers.dev/api/pastes/${slug}`);
+  const response = await fetch(`https://Neko.hornymama.workers.dev/api/pastes/${slug}`);
   const paste = await response.json();
   console.log('Paste content:', paste);
   return paste;
@@ -216,7 +216,7 @@ import json
 
 # Create a paste
 def create_paste(content, language='text', title=None):
-    url = 'https://binuniverse.hornymama.workers.dev/api/pastes'
+    url = 'https://Neko.hornymama.workers.dev/api/pastes'
     data = {
         'content': content,
         'language': language,
@@ -228,7 +228,7 @@ def create_paste(content, language='text', title=None):
 
 # Get a paste
 def get_paste(slug):
-    url = f'https://binuniverse.hornymama.workers.dev/api/pastes/{slug}'
+    url = f'https://Neko.hornymama.workers.dev/api/pastes/{slug}'
     response = requests.get(url)
     return response.json()
 
@@ -242,7 +242,7 @@ print(f"Created paste: {paste['slug']}")
 ### Project Structure
 
 ```
-binuniverse/
+Neko/
 ├── app/                    # Next.js app directory
 │   ├── api/               # API routes
 │   ├── paste/[slug]/      # Dynamic paste pages
@@ -325,10 +325,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🌐 **Website**: [https://binuniverse.hornymama.workers.dev](https://binuniverse.hornymama.workers.dev)
-- 📚 **Documentation**: [https://binuniverse.hornymama.workers.dev/docs](https://binuniverse.hornymama.workers.dev/docs)
-- 🔧 **API Docs**: [https://binuniverse.hornymama.workers.dev/api-docs](https://binuniverse.hornymama.workers.dev/api-docs)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/m0ansterr/binUniverse/issues)
+- 🌐 **Website**: [https://Neko.hornymama.workers.dev](https://Neko.hornymama.workers.dev)
+- 📚 **Documentation**: [https://Neko.hornymama.workers.dev/docs](https://Neko.hornymama.workers.dev/docs)
+- 🔧 **API Docs**: [https://Neko.hornymama.workers.dev/api-docs](https://Neko.hornymama.workers.dev/api-docs)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/m0ansterr/Neko/issues)
 
 ---
 

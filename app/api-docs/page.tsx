@@ -4,10 +4,10 @@ import Footer from '@/components/Footer'
 
 export default function APIDocsPage() {
   return (
-    <div className="binuniverse-layout">
+    <div className="Neko-layout">
       <Header />
 
-      <div id="content" className="binuniverse-editor">
+      <div id="content" className="Neko-editor">
         <div className="markdown p-8">
           <h1 className="text-3xl font-bold mb-6">API Documentation</h1>
 
@@ -15,11 +15,11 @@ export default function APIDocsPage() {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Overview</h2>
               <p>
-                binuniverse provides a RESTful API for programmatic access to create, read, update, and delete pastes.
+                Neko provides a RESTful API for programmatic access to create, read, update, and delete pastes.
                 All endpoints return JSON responses.
               </p>
               <div className="bg-gray-800 rounded p-4 mt-4">
-                <code className="text-green-400">Base URL: https://binuniverse.hornymama.workers.dev/api</code>
+                <code className="text-green-400">Base URL: https://Neko.hornymama.workers.dev/api</code>
               </div>
             </section>
 
@@ -45,7 +45,7 @@ export default function APIDocsPage() {
                   <p className="mb-3">Get a specific paste by slug</p>
                   <div className="bg-gray-800 rounded p-4">
                     <p className="text-green-400 text-sm mb-2">Example:</p>
-                    <code className="text-sm">curl https://binuniverse.hornymama.workers.dev/api/pastes/abc12345</code>
+                    <code className="text-sm">curl https://Neko.hornymama.workers.dev/api/pastes/abc12345</code>
                   </div>
                 </div>
 
@@ -67,7 +67,7 @@ export default function APIDocsPage() {
                   <p className="mb-3">Delete a paste</p>
                   <div className="bg-gray-800 rounded p-4">
                     <p className="text-green-400 text-sm mb-2">Example:</p>
-                    <code className="text-sm">curl -X DELETE https://binuniverse.hornymama.workers.dev/api/pastes/abc12345</code>
+                    <code className="text-sm">curl -X DELETE https://Neko.hornymama.workers.dev/api/pastes/abc12345</code>
                   </div>
                 </div>
 
@@ -76,7 +76,7 @@ export default function APIDocsPage() {
                   <p className="mb-3">Get raw paste content</p>
                   <div className="bg-gray-800 rounded p-4">
                     <p className="text-green-400 text-sm mb-2">Example:</p>
-                    <code className="text-sm">curl https://binuniverse.hornymama.workers.dev/api/pastes/abc12345/raw</code>
+                    <code className="text-sm">curl https://Neko.hornymama.workers.dev/api/pastes/abc12345/raw</code>
                   </div>
                 </div>
               </div>

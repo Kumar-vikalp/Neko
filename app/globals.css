@@ -301,8 +301,8 @@ footer .links {
 	z-index: -1;
 }
 
-/* binuniverse-style editor container */
-.binuniverse-editor {
+/* Neko-style editor container */
+.Neko-editor {
 	position: absolute;
 	top: var(--bar-height-2x);
 	bottom: var(--bar-height);
@@ -311,7 +311,7 @@ footer .links {
 	background: var(--bg-color);
 }
 
-.binuniverse-textarea {
+.Neko-textarea {
 	width: 100%;
 	height: 100%;
 	background: var(--bg-color);
@@ -325,12 +325,12 @@ footer .links {
 	padding: 1rem;
 }
 
-.binuniverse-textarea::placeholder {
+.Neko-textarea::placeholder {
 	color: var(--placeholder-color);
 }
 
-/* Override Tailwind for binuniverse compatibility */
-.binuniverse-layout {
+/* Override Tailwind for Neko compatibility */
+.Neko-layout {
 	background: var(--bg-color) !important;
 	color: var(--main-color) !important;
 	font-family: Hack, Menlo, Monaco, Consolas, "Courier New", monospace !important;
@@ -345,7 +345,7 @@ footer .links {
   font-display: swap;
 }
 
-.binuniverse-logo {
+.Neko-logo {
   font-family: 'Data70', monospace;
 }
 

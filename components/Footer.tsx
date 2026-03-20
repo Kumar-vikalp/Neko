@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="flex items-center">
-        <span>binuniverse</span>
+        <span>Neko</span>
       </div>
       
       <div className="links">

@@ -1,5 +1,5 @@
 /*
-  # Create pastes table for BinUniverse
+  # Create pastes table for Neko
 
   1. New Tables
     - `pastes`

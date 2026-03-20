@@ -4,19 +4,19 @@ import Footer from '@/components/Footer'
 
 export default function AboutPage() {
   return (
-    <div className="binuniverse-layout">
+    <div className="Neko-layout">
       <Header />
       
-      <div id="content" className="binuniverse-editor">
+      <div id="content" className="Neko-editor">
         <div className="markdown p-8">
-          <h1 className="text-3xl font-bold mb-6">About binuniverse</h1>
+          <h1 className="text-3xl font-bold mb-6">About Neko</h1>
           
           <div className="space-y-4 text-base leading-relaxed">
             <p>
-              binuniverse is a simple pastebin service that allows you to share code snippets,
+              Neko is a simple pastebin service that allows you to share code snippets,
               text, and other content with others. Whether you&apos;re collaborating on a project,
               sharing code for debugging, or just need a quick way to store text temporarily,
-              binuniverse has you covered.
+              Neko has you covered.
             </p>
             
             <h2 className="text-2xl font-semibold mt-8 mb-4">Features</h2>
@@ -49,17 +49,17 @@ export default function AboutPage() {
             
             <h2 className="text-2xl font-semibold mt-8 mb-4">Source Code</h2>
             <p>
-              binuniverse is open source and available on GitHub. You can view the source code,
+              Neko is open source and available on GitHub. You can view the source code,
               report issues, or contribute to the project:
             </p>
             <p className="mt-2">
               <a 
-                href="https://github.com/m0ansterr/binUniverse" 
+                href="https://github.com/m0ansterr/Neko" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300 underline"
               >
-                https://github.com/m0ansterr/binUniverse
+                https://github.com/m0ansterr/Neko
               </a>
             </p>
           </div>

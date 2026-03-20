@@ -77,12 +77,12 @@ export default function PasteForm() {
   }, [handleSave, handleNew])
 
   return (
-    <div className="binuniverse-layout">
+    <div className="Neko-layout">
       <Header onSave={handleSave} onNew={handleNew} />
 
-      <div id="content" className="binuniverse-editor">
+      <div id="content" className="Neko-editor">
         <textarea
-          className="binuniverse-textarea"
+          className="Neko-textarea"
           value={content}
           onChange={(e) => setContent(e.target.value)}
           placeholder="Paste code, save and share the link!"
