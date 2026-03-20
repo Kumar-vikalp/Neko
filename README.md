@@ -4,7 +4,7 @@
 
 A modern, fast, and elegant pastebin service built with Next.js and Supabase. Share code snippets, text, and collaborate with others seamlessly.
 
-🌐 **Live Demo:** [https://Neko.hornymama.workers.dev](https://Neko.hornymama.workers.dev)
+🌐 **Live Demo:** (https://nekobin.kumarvikalp48.workers.dev/)
 
 ## ✨ Features
 
@@ -31,7 +31,7 @@ A modern, fast, and elegant pastebin service built with Next.js and Supabase. Sh
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/m0ansterr/Neko.git
+   git clone https://github.com/kumar-vikalp/Neko.git
    cd Neko
    ```
 
@@ -104,7 +104,7 @@ The database schema will be automatically created when you first run the applica
 ### Web Interface
 
 1. **Create a Paste**
-   - Visit [https://Neko.hornymama.workers.dev](https://Neko.hornymama.workers.dev)
+   - Visit (https://nekobin.kumarvikalp48.workers.dev/)
    - Paste your content in the text area
    - Press `Ctrl+S` to save
    - Share the generated URL
@@ -121,12 +121,12 @@ The database schema will be automatically created when you first run the applica
 
 The Neko API provides full CRUD operations for pastes.
 
-**Base URL:** `https://Neko.hornymama.workers.dev/api`
+**Base URL:** `https://nekobin.kumarvikalp48.workers.dev/api`
 
 #### Create a Paste
 
 ```bash
-curl -X POST https://Neko.hornymama.workers.dev/api/pastes \
+curl -X POST https://nekobin.kumarvikalp48.workers.dev/api/pastes \
   -H "Content-Type: application/json" \
   -d '{
     "content": "console.log(\"Hello, World!\");",
@@ -150,19 +150,19 @@ curl -X POST https://Neko.hornymama.workers.dev/api/pastes \
 #### Get a Paste
 
 ```bash
-curl https://Neko.hornymama.workers.dev/api/pastes/abc12345
+curl https://nekobin.kumarvikalp48.workers.dev/api/pastes/abc12345
 ```
 
 #### Get Raw Content
 
 ```bash
-curl https://Neko.hornymama.workers.dev/api/pastes/abc12345/raw
+curl https://nekobin.kumarvikalp48.workers.dev/api/pastes/abc12345/raw
 ```
 
 #### Update a Paste
 
 ```bash
-curl -X PUT https://Neko.hornymama.workers.dev/api/pastes/abc12345 \
+curl -X PUT https://nekobin.kumarvikalp48.workers.dev/api/pastes/abc12345 \
   -H "Content-Type: application/json" \
   -d '{
     "content": "Updated content here",
@@ -174,7 +174,7 @@ curl -X PUT https://Neko.hornymama.workers.dev/api/pastes/abc12345 \
 #### Delete a Paste
 
 ```bash
-curl -X DELETE https://Neko.hornymama.workers.dev/api/pastes/abc12345
+curl -X DELETE https://nekobin.kumarvikalp48.workers.dev/api/pastes/abc12345
 ```
 
 ### JavaScript/Node.js Example
@@ -182,7 +182,7 @@ curl -X DELETE https://Neko.hornymama.workers.dev/api/pastes/abc12345
 ```javascript
 // Create a new paste
 const createPaste = async () => {
-  const response = await fetch('https://Neko.hornymama.workers.dev/api/pastes', {
+  const response = await fetch('https://nekobin.kumarvikalp48.workers.dev/api/pastes', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -201,7 +201,7 @@ const createPaste = async () => {
 
 // Get a paste
 const getPaste = async (slug) => {
-  const response = await fetch(`https://Neko.hornymama.workers.dev/api/pastes/${slug}`);
+  const response = await fetch(`https://nekobin.kumarvikalp48.workers.dev/api/pastes/${slug}`);
   const paste = await response.json();
   console.log('Paste content:', paste);
   return paste;
@@ -216,7 +216,7 @@ import json
 
 # Create a paste
 def create_paste(content, language='text', title=None):
-    url = 'https://Neko.hornymama.workers.dev/api/pastes'
+    url = 'https://nekobin.kumarvikalp48.workers.dev/api/pastes'
     data = {
         'content': content,
         'language': language,
@@ -228,7 +228,7 @@ def create_paste(content, language='text', title=None):
 
 # Get a paste
 def get_paste(slug):
-    url = f'https://Neko.hornymama.workers.dev/api/pastes/{slug}'
+    url = f'https://nekobin.kumarvikalp48.workers.dev/api/pastes/{slug}'
     response = requests.get(url)
     return response.json()
 
@@ -325,9 +325,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🌐 **Website**: [https://Neko.hornymama.workers.dev](https://Neko.hornymama.workers.dev)
-- 📚 **Documentation**: [https://Neko.hornymama.workers.dev/docs](https://Neko.hornymama.workers.dev/docs)
-- 🔧 **API Docs**: [https://Neko.hornymama.workers.dev/api-docs](https://Neko.hornymama.workers.dev/api-docs)
+- 📚 **Documentation**: [https://nekobin.kumarvikalp48.workers.dev/docs](https://nekobin.kumarvikalp48.workers.dev/docs)
+- 🔧 **API Docs**: [https://nekobin.kumarvikalp48.workers.dev/api-docs](https://nekobin.kumarvikalp48.workers.dev/api-docs)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/m0ansterr/Neko/issues)
 
 ---
